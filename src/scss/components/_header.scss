@@ -1,0 +1,47 @@
+.header {
+    position: relative;
+    // background-image: radial-gradient(circle, $serenade, $papaya-whip);
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+
+    &__slogan {
+        position: absolute;
+        width: 300pt;
+        top: 50%;
+        left: 100pt;
+
+        &--content {
+            width: 100%;
+            font-size: 2.5rem;
+            line-height: 1.5;
+            transform: translate(0, -50%);
+            float: left;
+        }
+
+        a {
+            display: inline-block;
+        }
+
+        &--link {
+            background-color: $brown-bramble;
+            padding: 10pt 20pt;
+            font-size: 1rem;
+            color: $white;
+            border-radius: 20pt;
+            float: left;
+        }
+    }
+
+    &__illustration {
+        position: absolute;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 400pt;
+        height: 400pt;
+        top: 60%;
+        right: 100pt;
+        transform: translate(0, -50%);
+    }
+}

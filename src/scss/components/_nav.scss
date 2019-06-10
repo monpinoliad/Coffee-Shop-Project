@@ -1,0 +1,53 @@
+.nav {
+    background-color: $white;
+    position: fixed;
+    width: 100%;
+    height: 70pt;
+    padding: 20pt;
+    z-index: 9999;
+
+    &__logo {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: 'Fredoka One', cursive;
+        color: $brown-bramble;
+        user-select: none;
+        float: left;
+    }
+
+    &__menu {
+        width: 500pt;
+        list-style: none;
+        list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+        margin: 0 0 0 20pt;
+        padding: 0;
+        float: left;
+
+        a:focus {
+            display: inline-block;
+            float: left;
+        }
+
+        &--item {
+            padding: 10pt 20pt;
+            margin: 0 5pt;
+            float: left;
+            cursor: pointer;
+            transition: 250ms;
+
+            &:hover {
+                background-color: $brown-bramble;
+                color: $white;
+                transition: 250ms;
+            }
+        }
+    }
+
+    &__account {
+        background-color: $brown-bramble;
+        padding: 10pt 20pt;
+        color: $white;
+        border-radius: 20pt;
+        float: right;
+    }
+}
